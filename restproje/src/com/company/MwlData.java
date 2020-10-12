@@ -1206,7 +1206,7 @@ public class MwlData {
     String PatientsSexT1= "vr";
     String PatientsSexT2= "Value";
     String PatientsSexV1;
-    String PatientsSexV2;
+    String PatientsSexV2="";
 
     //001021C0
     JSONObject PregnancyStatusO = new JSONObject();
@@ -1222,7 +1222,7 @@ public class MwlData {
     String StudyInstanceUIDT1= "vr";
     String StudyInstanceUIDT2= "Value";
     String StudyInstanceUIDV1;
-    String StudyInstanceUIDV2;
+    String StudyInstanceUIDV2="";
 
     //00321032
     JSONObject RequestingPhysicianO = new JSONObject();
@@ -1231,7 +1231,7 @@ public class MwlData {
     String RequestingPhysicianT2= "Value";
     String RequestingPhysicianT3= "Alphabetic";
     String RequestingPhysicianV1;
-    String RequestingPhysicianV2;
+    String RequestingPhysicianV2="";
 
     //00321060
     JSONObject RequestedProcedureDescriptionO = new JSONObject();
@@ -1239,7 +1239,7 @@ public class MwlData {
     String RequestedProcedureDescriptionT1= "vr";
     String RequestedProcedureDescriptionT2= "Value";
     String RequestedProcedureDescriptionV1;
-    String RequestedProcedureDescriptionV2;
+    String RequestedProcedureDescriptionV2="";
 
     //00380010
     JSONObject AdmissionIDO = new JSONObject();
@@ -1247,7 +1247,7 @@ public class MwlData {
     String AdmissionIDT1= "vr";
     String AdmissionIDT2= "Value";
     String AdmissionIDV1;
-    String AdmissionIDV2;
+    String AdmissionIDV2="";
 
     //00400100
     JSONObject ScheduledProcedureStepSequenceO = new JSONObject();
@@ -1256,7 +1256,7 @@ public class MwlData {
     String ScheduledProcedureStepSequenceT2= "Value";
     String ScheduledProcedureStepSequenceT3= "00080060";
     String ScheduledProcedureStepSequenceV1;
-    String ScheduledProcedureStepSequenceV2;
+    String ScheduledProcedureStepSequenceV2="";
 
     //00400001
     JSONObject ScheduledStationAETitleO = new JSONObject();
@@ -1264,7 +1264,7 @@ public class MwlData {
     String ScheduledStationAETitleT1= "vr";
     String ScheduledStationAETitleT2= "Value";
     String ScheduledStationAETitleV1;
-    String ScheduledStationAETitleV2;
+    String ScheduledStationAETitleV2="";
 
 
     //00400002
@@ -1273,7 +1273,7 @@ public class MwlData {
     String ScheduledProcedureStepStartDateT1= "vr";
     String ScheduledProcedureStepStartDateT2= "Value";
     String ScheduledProcedureStepStartDateV1;
-    String ScheduledProcedureStepStartDateV2;
+    String ScheduledProcedureStepStartDateV2="";
 
 
     //00400003
@@ -1282,7 +1282,7 @@ public class MwlData {
     String ScheduledProcedureStepStartTimeT1= "vr";
     String ScheduledProcedureStepStartTimeT2= "Value";
     String ScheduledProcedureStepStartTimeV1;
-    String ScheduledProcedureStepStartTimeV2;
+    String ScheduledProcedureStepStartTimeV2="";
 
 
     //00400008
@@ -1291,7 +1291,7 @@ public class MwlData {
     String ScheduledProtocolCodeSequenceT1= "vr";
     String ScheduledProtocolCodeSequenceT2= "Value";
     String ScheduledProtocolCodeSequenceV1;
-    String ScheduledProtocolCodeSequenceV2;
+    String ScheduledProtocolCodeSequenceV2="";
 
     //00400009
     JSONObject ScheduledProcedureStepIDO = new JSONObject();
@@ -1299,7 +1299,7 @@ public class MwlData {
     String ScheduledProcedureStepIDT1= "vr";
     String ScheduledProcedureStepIDT2= "Value";
     String ScheduledProcedureStepIDV1;
-    String ScheduledProcedureStepIDV2;
+    String ScheduledProcedureStepIDV2="";
 
     //00400010
     JSONObject ScheduledStationNameO = new JSONObject();
@@ -1307,7 +1307,7 @@ public class MwlData {
     String ScheduledStationNameT1= "vr";
     String ScheduledStationNameT2= "Value";
     String ScheduledStationNameV1;
-    String ScheduledStationNameV2;
+    String ScheduledStationNameV2="";
 
     //00400020
     JSONObject ScheduledProcedureStepStatusO = new JSONObject();
@@ -1315,7 +1315,7 @@ public class MwlData {
     String ScheduledProcedureStepStatusT1= "vr";
     String ScheduledProcedureStepStatusT2= "Value";
     String ScheduledProcedureStepStatusV1;
-    String ScheduledProcedureStepStatusV2;
+    String ScheduledProcedureStepStatusV2="";
 
     //00401001
     JSONObject RequestedProcedureIDO = new JSONObject();
@@ -1323,7 +1323,7 @@ public class MwlData {
     String RequestedProcedureIDT1= "vr";
     String RequestedProcedureIDT2= "Value";
     String RequestedProcedureIDV1;
-    String RequestedProcedureIDV2;
+    String RequestedProcedureIDV2="";
 
     //00401003
     JSONObject RequestedProcedurePriorityO = new JSONObject();
@@ -1331,6 +1331,6 @@ public class MwlData {
     String RequestedProcedurePriorityT1= "vr";
     String RequestedProcedurePriorityT2= "Value";
     String RequestedProcedurePriorityV1;
-    String RequestedProcedurePriorityV2;
+    String RequestedProcedurePriorityV2="";
 
 }

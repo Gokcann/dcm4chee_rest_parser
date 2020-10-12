@@ -3,6 +3,7 @@ package com.company;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+
 import java.util.ArrayList;
 
 public class MwlQuery {
@@ -163,11 +164,14 @@ public class MwlQuery {
                         .getJSONArray(_tmp.getAccessionNumberT2()).getString(0));
             }
             //iki asamali
-            if (myArray.getJSONObject(i).getJSONObject(_tmp.getAccessionNumberT0()).has(_tmp.getAccessionNumberT2())) {
+            //myArray.getJSONObject(i).getJSONObject(_tmp.getReferringPhysiciansNameT0()).getJSONArray(_tmp.getReferringPhysiciansNameT2()).getJSONObject(0).has(_tmp.getReferringPhysiciansNameT3())
+            if (myArray.getJSONObject(i).has(_tmp.getReferringPhysiciansNameT0()) && myArray.getJSONObject(i).getJSONObject(_tmp.getReferringPhysiciansNameT0()).getJSONArray(_tmp.getReferringPhysiciansNameT2()).getJSONObject(0).has(_tmp.getReferringPhysiciansNameT3())) {
                 tmp.setReferringPhysiciansNameV2(obj.getJSONObject(_tmp.getReferringPhysiciansNameT0())
                         .getJSONArray(_tmp.getReferringPhysiciansNameT2()).getJSONObject(0)
                         .getString(_tmp.getReferringPhysiciansNameT3()));
             }
+
+
 
             if (myArray.getJSONObject(i).getJSONObject(_tmp.getRetrieveURLT0()).has(_tmp.getRetrieveURLT2())) {
                 tmp.setRetrieveURLV2(obj.getJSONObject(_tmp.getRetrieveURLT0())
@@ -195,10 +199,12 @@ public class MwlQuery {
                         .getJSONArray(_tmp.getPatientsSexT2()).getString(0));
             }
 
-            if (myArray.getJSONObject(i).getJSONObject(_tmp.getPregnancyStatusT0()).has(_tmp.getPregnancyStatusT2())) {
+            if (myArray.getJSONObject(i).has(_tmp.getPregnancyStatusT0()) && myArray.getJSONObject(i).getJSONObject(_tmp.getPregnancyStatusT0()).has(_tmp.getPregnancyStatusT2())) {
                 tmp.setPregnancyStatusV2(obj.getJSONObject(_tmp.getPregnancyStatusT0())
                         .getJSONArray(_tmp.getPregnancyStatusT2()).getString(0));
             }
+
+
 
             if (myArray.getJSONObject(i).getJSONObject(_tmp.getStudyInstanceUIDT0()).has(_tmp.getStudyInstanceUIDT2())) {
                 tmp.setStudyInstanceUIDV2(obj.getJSONObject(_tmp.getStudyInstanceUIDT0())
@@ -206,31 +212,40 @@ public class MwlQuery {
             }
 
             //iki asamali parse
-            if (myArray.getJSONObject(i).getJSONObject(_tmp.getRequestingPhysicianT0()).has(_tmp.getRequestingPhysicianT2())) {
+
+            if (myArray.getJSONObject(i).has(_tmp.getRequestingPhysicianT0()) && myArray.getJSONObject(i).getJSONObject(_tmp.getRequestingPhysicianT0()).has(_tmp.getRequestingPhysicianT2())) {
                 tmp.setRequestingPhysicianV2(obj.getJSONObject(_tmp.getRequestingPhysicianT0())
                         .getJSONArray(_tmp.getRequestingPhysicianT2()).getJSONObject(0)
                         .getString(_tmp.getRequestingPhysicianT3()));
             }
 
-            if (myArray.getJSONObject(i).getJSONObject(_tmp.getRequestedProcedureDescriptionT0()).has(_tmp.getRequestedProcedureDescriptionT2())) {
+
+
+            if (myArray.getJSONObject(i).has(_tmp.getRequestedProcedureDescriptionT0()) && myArray.getJSONObject(i).getJSONObject(_tmp.getRequestedProcedureDescriptionT0()).has(_tmp.getRequestedProcedureDescriptionT2())) {
                 tmp.setRequestedProcedureDescriptionV2(obj.getJSONObject(_tmp.getRequestedProcedureDescriptionT0())
                         .getJSONArray(_tmp.getRequestedProcedureDescriptionT2()).getString(0));
             }
 
-            if (myArray.getJSONObject(i).getJSONObject(_tmp.getAdmissionIDT0()).has(_tmp.getAdmissionIDT2())) {
+
+
+            if (myArray.getJSONObject(i).has(_tmp.getAdmissionIDT0()) && myArray.getJSONObject(i).getJSONObject(_tmp.getAdmissionIDT0()).has(_tmp.getAdmissionIDT2())) {
                 tmp.setAdmissionIDV2(obj.getJSONObject(_tmp.getAdmissionIDT0())
                         .getJSONArray(_tmp.getAdmissionIDT2()).getString(0));
             }
 
-            //us asamali parse
-            if (myArray.getJSONObject(i).getJSONObject(_tmp.getScheduledProcedureStepSequenceT0()).has(_tmp.getScheduledProcedureStepSequenceT2())) {
+
+
+            //uc asamali parse
+            if (myArray.getJSONObject(i).has(_tmp.getScheduledProcedureStepSequenceT0()) && myArray.getJSONObject(i).getJSONObject(_tmp.getScheduledProcedureStepSequenceT0()).getJSONArray(_tmp.getScheduledProcedureStepSequenceT2()).getJSONObject(0).has(_tmp.getScheduledProcedureStepSequenceT3()) && myArray.getJSONObject(i).getJSONObject(_tmp.getScheduledProcedureStepSequenceT0()).getJSONArray(_tmp.getScheduledProcedureStepSequenceT2()).getJSONObject(0).getJSONObject(_tmp.getScheduledProcedureStepSequenceT3()).has(_tmp.getScheduledProcedureStepSequenceT2())) {
                 tmp.setScheduledProcedureStepSequenceV2(obj.getJSONObject(_tmp.getScheduledProcedureStepSequenceT0())
                         .getJSONArray(_tmp.getScheduledProcedureStepSequenceT2()).getJSONObject(0).getJSONObject(_tmp.getScheduledProcedureStepSequenceT3()).
                         getJSONArray(_tmp.getScheduledProcedureStepSequenceT2()).getString(0));
             }
 
-            //yukaridaki 00400100 sorgunun alt dugumleri...
-            if (myArray.getJSONObject(i).getJSONObject(_tmp.getScheduledProcedureStepSequenceT0()).has(_tmp.getScheduledStationAETitleT2())) {
+
+
+            //yukaridaki 00400100 sorgunun alt dugumleri...**************************************************************************************************************************************************************************
+            if (myArray.getJSONObject(i).getJSONObject(_tmp.getScheduledProcedureStepSequenceT0()).getJSONArray(_tmp.getScheduledProcedureStepSequenceT2()).getJSONObject(0).getJSONObject(_tmp.getScheduledStationAETitleT0()).has(_tmp.getScheduledStationAETitleT2())) {
                 tmp.setScheduledStationAETitleV2(obj.getJSONObject(_tmp.getScheduledProcedureStepSequenceT0())
                         .getJSONArray(_tmp.getScheduledProcedureStepSequenceT2()).getJSONObject(0).getJSONObject(_tmp.getScheduledStationAETitleT0())
                         .getJSONArray(_tmp.getScheduledProcedureStepSequenceT2()).getString(0));
@@ -251,30 +266,48 @@ public class MwlQuery {
 
             }
 
-            if (myArray.getJSONObject(i).getJSONObject(_tmp.getScheduledProcedureStepSequenceT0()).getJSONArray(_tmp.getScheduledProcedureStepSequenceT2()).getJSONObject(0).getJSONObject(_tmp.getScheduledProtocolCodeSequenceT0()).has(_tmp.getScheduledProcedureStepStartTimeT2())) {
+            if (myArray.getJSONObject(i).has(_tmp.getScheduledProcedureStepSequenceT0()) && myArray.getJSONObject(i).getJSONObject(_tmp.getScheduledProcedureStepSequenceT0()).getJSONArray(_tmp.getScheduledProcedureStepSequenceT2()).getJSONObject(0).has(_tmp.getScheduledProcedureStepSequenceT3()) && myArray.getJSONObject(i).getJSONObject(_tmp.getScheduledProcedureStepSequenceT0()).getJSONArray(_tmp.getScheduledProcedureStepSequenceT2()).getJSONObject(0).getJSONObject(_tmp.getScheduledProtocolCodeSequenceT0()).has(_tmp.getScheduledProtocolCodeSequenceT2())) {
                 tmp.setScheduledProtocolCodeSequenceV2(obj.getJSONObject(_tmp.getScheduledProcedureStepSequenceT0())
                         .getJSONArray(_tmp.getScheduledProcedureStepSequenceT2()).getJSONObject(0).getJSONObject(_tmp.getScheduledProtocolCodeSequenceT0())
                         .getJSONArray(_tmp.getScheduledProcedureStepSequenceT2()).getString(0));
 
             }
 
-            /*
-            if (myArray.getJSONObject(i).getJSONObject(_tmp.getScheduledProcedureStepSequenceT0())
-                    .getJSONArray(_tmp.getScheduledProcedureStepSequenceT2())
-                    .getJSONObject(0).getJSONObject(_tmp.getScheduledProcedureStepIDT0())
-                    .has(_tmp.getScheduledProcedureStepIDT2())) {
-                tmp.setScheduledProcedureStepIDV2(obj.getJSONObject(_tmp.getScheduledProcedureStepIDT0())
+
+
+            if (myArray.getJSONObject(i).getJSONObject(_tmp.getScheduledProcedureStepSequenceT0()).getJSONArray(_tmp.getScheduledProcedureStepSequenceT2()).getJSONObject(0).getJSONObject(_tmp.getScheduledProcedureStepIDT0()).has(_tmp.getScheduledProcedureStepIDT2())) {
+                tmp.setScheduledProcedureStepIDV2(obj.getJSONObject(_tmp.getScheduledProcedureStepSequenceT0())
                         .getJSONArray(_tmp.getScheduledProcedureStepSequenceT2()).getJSONObject(0).getJSONObject(_tmp.getScheduledProcedureStepIDT0())
-                        .getJSONArray(_tmp.getScheduledProcedureStepSequenceT2()).getString(0));
+                        .getJSONArray(_tmp.getScheduledProcedureStepIDT2()).getString(0));
 
             }
 
-             */
+            if (myArray.getJSONObject(i).has(_tmp.getScheduledProcedureStepSequenceT0()) && myArray.getJSONObject(i).getJSONObject(_tmp.getScheduledProcedureStepSequenceT0()).getJSONArray(_tmp.getScheduledProcedureStepSequenceT2()).getJSONObject(0).has(_tmp.getScheduledProcedureStepSequenceT3()) && myArray.getJSONObject(i).getJSONObject(_tmp.getScheduledProcedureStepSequenceT0()).getJSONArray(_tmp.getScheduledProcedureStepSequenceT2()).getJSONObject(0).getJSONObject(_tmp.getScheduledStationNameT0()).has(_tmp.getScheduledStationNameT2())) {
+                tmp.setScheduledStationNameV2(obj.getJSONObject(_tmp.getScheduledProcedureStepSequenceT0())
+                        .getJSONArray(_tmp.getScheduledProcedureStepSequenceT2()).getJSONObject(0).getJSONObject(_tmp.getScheduledStationNameT0())
+                        .getJSONArray(_tmp.getScheduledStationNameT2()).getString(0));
+
+            }
 
 
 
+            if (myArray.getJSONObject(i).getJSONObject(_tmp.getScheduledProcedureStepSequenceT0()).getJSONArray(_tmp.getScheduledProcedureStepSequenceT2()).getJSONObject(0).getJSONObject(_tmp.getScheduledProcedureStepStatusT0()).has(_tmp.getScheduledProcedureStepStatusT2())) {
+                tmp.setScheduledProcedureStepStatusV2(obj.getJSONObject(_tmp.getScheduledProcedureStepSequenceT0())
+                        .getJSONArray(_tmp.getScheduledProcedureStepSequenceT2()).getJSONObject(0).getJSONObject(_tmp.getScheduledProcedureStepStatusT0())
+                        .getJSONArray(_tmp.getScheduledProcedureStepStatusT2()).getString(0));
+
+            }
+
+            if (myArray.getJSONObject(i).getJSONObject(_tmp.getRequestedProcedureIDT0()).has(_tmp.getRequestedProcedureIDT2())) {
+                tmp.setRequestedProcedureIDV2(obj.getJSONObject(_tmp.getRequestedProcedureIDT0())
+                        .getJSONArray(_tmp.getRequestedProcedureIDT2()).getString(0));
+            }
 
 
+            if (myArray.getJSONObject(i).has(_tmp.getRequestedProcedurePriorityT0()) && myArray.getJSONObject(i).getJSONObject(_tmp.getRequestedProcedurePriorityT0()).has(_tmp.getRequestedProcedurePriorityT2())) {
+                tmp.setRequestedProcedurePriorityV2(obj.getJSONObject(_tmp.getRequestedProcedurePriorityT0())
+                        .getJSONArray(_tmp.getRequestedProcedurePriorityT2()).getString(0));
+            }
 
 
 
