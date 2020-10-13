@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NativeDicomModel>
+   <DicomAttribute Tag="00080020" VR="DT" Keyword="StudyDate">
+     <Value number="1">20130409</value>
+    </DicomAttribute>
+   <DicomAttribute Tag="00080030" VR="TM" Keyword="StudyTime">
+     <Value number="1">131600.0000</value>
+ </DicomAttribute>
+   <DicomAttribute Tag="00080050" VR="CS" Keyword="AccessionNumber">
+       <Value number="1">11235813</value>
+    </DicomAttribute>
+   <DicomAttribute Tag="00080056" VR="CS" Keyword="InstanceAvailability">
+      <Value number="1"ONLINE</value>
+  </DicomAttribute>
+   <DicomAttribute Tag="00080061" VR="CS" Keyword="ModalitiesInStudy">
+     <Value number="1">CT</value>
+      <Value number="2">PET</value>
+ </DicomAttribute>
+   <DicomAttribute Tag="00080090" VR="PN" Keyword="ReferringPhysiciansName">
+       <PersonName number="1">
+         <SingleByte>
+                <FamilyName>B</FamilyName> 
+               <GivenName>Smith</GivenName>
+          </SingleByte>
+       </PersonName>
+   </DicomAttribute>
+   <DicomAttribute Tag="00100010" VR="PN" Keyword="PatientName">
+       <PersonName number="1">
+         <SingleByte>
+                <FamilyName>Wang</FamilyName> 
+                <GivenName>XiaoDong</GivenName>
+               <MiddleName>SB3</MiddleName>
+              <NamePrefix>SB4</NamePrefix>
+              <NameSuffix>SB5</NameSuffix>
+          </SingleByte>
+           <Ideographic>
+               <FamilyName>cvvbvbcbc</FamilyName> 
+            </Ideographic>
+      </PersonName>
+   </DicomAttribute>
+   <DicomAttribute Tag="00100020" VR="CS" Keyword="PatientID">
+     <Value number="1">12345</value>
+   </DicomAttribute>
+   <DicomAttribute Tag="00100021" VR="CS" Keyword="IssuerOfPatientID">
+     <Value number="1">HospitalA</value>
+   </DicomAttribute>
+   <DicomAttribute Tag="00100030" VR="DT" Keyword="PatientsBirthDate">
+     <Value number="1">19670701</value>
+    </DicomAttribute>
+   <DicomAttribute Tag="00100040" VR="CS" Keyword="PatientsSex">
+       <Value number="1">MALE</value>
+    </DicomAttribute>
+   <DicomAttribute Tag="00200010" VR="SH" Keyword="StudyID">
+       <Value number="1">11235813</value>
+    </DicomAttribute>
+   <DicomAttribute Tag="0020000D" VR="UI" Keyword="StudyInstanceUID">
+      <Value number="1">1.2.392.200036.9116.2.2.2.1762893313.1029997326.945873</value>
+  </DicomAttribute>
+</NativeDicomModel>

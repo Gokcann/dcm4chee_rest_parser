@@ -82,33 +82,33 @@ public class Main {
 
         //Query for study
 
-        StudyQuery query = new StudyQuery();
-        QueryProcess response = new QueryProcess();
-        StudyData studyData = new StudyData();
-        ArrayList<StudyData> dataList;
-        //query.MwlQuery(response.QueryProcessMethod().toString());
-        dataList=query.StudyQueryParse(response.QueryProcessMethod().toString());
-
-        for (int i = 0 ; i<dataList.size();i++) {
-            System.out.println("*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/");
-            System.out.println(dataList.get(i).SpecificCharacterSetV2);
-            System.out.println(dataList.get(i).StudyDateV2);
-            System.out.println(dataList.get(i).AccessionNumberV2);
-            System.out.println(dataList.get(i).RetrieveAETitleV2);
-            System.out.println(dataList.get(i).InstanceAvailabilityV2);
-            System.out.println(dataList.get(i).ModalitiesInStudyV2);
-            System.out.println(dataList.get(i).ReferringPhysiciansNameV2);
-            System.out.println(dataList.get(i).RetrieveURLV2);
-            System.out.println(dataList.get(i).PatientsNameV2);
-            System.out.println(dataList.get(i).PatientsIDV2);
-            System.out.println(dataList.get(i).PatientsBirthDateV2);
-            System.out.println(dataList.get(i).PatientsSexV2);
-            System.out.println(dataList.get(i).StudyInstanceUIDV2);
-            System.out.println(dataList.get(i).StudyIDV2);
-            System.out.println(dataList.get(i).NumberofStudyRelatedSeriesV2);
-            System.out.println(dataList.get(i).NumberofStudyRelatedInstancesV2);
-            System.out.println("*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/");
-        }
+//        StudyQuery query = new StudyQuery();
+//        QueryProcess response = new QueryProcess();
+//        StudyData studyData = new StudyData();
+//        ArrayList<StudyData> dataList;
+//        //query.MwlQuery(response.QueryProcessMethod().toString());
+//        dataList=query.StudyQueryParse(response.QueryProcessMethod().toString());
+//
+//        for (int i = 0 ; i<dataList.size();i++) {
+//            System.out.println("*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/");
+//            System.out.println(dataList.get(i).SpecificCharacterSetV2);
+//            System.out.println(dataList.get(i).StudyDateV2);
+//            System.out.println(dataList.get(i).AccessionNumberV2);
+//            System.out.println(dataList.get(i).RetrieveAETitleV2);
+//            System.out.println(dataList.get(i).InstanceAvailabilityV2);
+//            System.out.println(dataList.get(i).ModalitiesInStudyV2);
+//            System.out.println(dataList.get(i).ReferringPhysiciansNameV2);
+//            System.out.println(dataList.get(i).RetrieveURLV2);
+//            System.out.println(dataList.get(i).PatientsNameV2);
+//            System.out.println(dataList.get(i).PatientsIDV2);
+//            System.out.println(dataList.get(i).PatientsBirthDateV2);
+//            System.out.println(dataList.get(i).PatientsSexV2);
+//            System.out.println(dataList.get(i).StudyInstanceUIDV2);
+//            System.out.println(dataList.get(i).StudyIDV2);
+//            System.out.println(dataList.get(i).NumberofStudyRelatedSeriesV2);
+//            System.out.println(dataList.get(i).NumberofStudyRelatedInstancesV2);
+//            System.out.println("*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/");
+//        }
 
 
     }
