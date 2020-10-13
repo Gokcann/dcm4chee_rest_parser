@@ -309,6 +309,7 @@ public class MwlQuery {
                         .getJSONArray(_tmp.getRequestedProcedurePriorityT2()).getString(0));
             }
 
+            //TODO add other if &and& controls
 
 
             list.add(tmp);

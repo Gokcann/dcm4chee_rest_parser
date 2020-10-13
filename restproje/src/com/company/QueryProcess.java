@@ -29,6 +29,8 @@ public class QueryProcess {
         try {
             URL url = new URL("http://192.168.12.113:8080/dcm4chee-arc/aets/DCM4CHEE/rs/mwlitems");
             //http://192.168.12.44:8080/dcm4chee-arc/aets/DCM4CHEE/rs/mwlitems
+            //http://192.168.12.113:8080/dcm4chee-arc/aets/DCM4CHEE/rs/mwlitems
+
             connection = (HttpURLConnection) url.openConnection();
             //request
             connection.setRequestMethod("GET");
