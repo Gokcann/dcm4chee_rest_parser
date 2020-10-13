@@ -109,11 +109,13 @@ public class Main {
 //        }
 
         //auto open
-        ProcessBuilder pb = new ProcessBuilder( "get -l" , "D:\\a", "D:\\a");
-        pb.directory(new File("C:\\Program Files\\Weasis\\Weasis.exe"));
-        Process p = pb.start();
+//        ProcessBuilder pb = new ProcessBuilder("");
+//        pb.directory(new File("C:\\Program Files\\Weasis\\Weasis.exe"));
+//        Process p = pb.start();
 
-        //Process process = new ProcessBuilder("C:\\Program Files\\Weasis\\Weasis.exe").start();
+        //Process process = new ProcessBuilder("C:\\Program Files\\Weasis\\Weasis.exe").command("$dicom:get -l \"D:/a/\"").start();
+        //auto open weasis for given directory
+        Process process = new ProcessBuilder("C:\\Program Files\\Weasis\\Weasis.exe", "$dicom:get -l \"D:/a/\"").start();
 
     }
 }
