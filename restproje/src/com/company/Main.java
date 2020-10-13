@@ -2,10 +2,8 @@ package com.company;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
-import java.io.BufferedReader;
-import java.io.Console;
-import java.io.IOException;
-import java.io.InputStreamReader;
+
+import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URI;
@@ -22,7 +20,7 @@ public class Main {
     private  static HttpURLConnection connection;
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         //Query for mwl
 
@@ -110,6 +108,12 @@ public class Main {
 //            System.out.println("*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/");
 //        }
 
+        //auto open
+        ProcessBuilder pb = new ProcessBuilder( "get -l" , "D:\\a", "D:\\a");
+        pb.directory(new File("C:\\Program Files\\Weasis\\Weasis.exe"));
+        Process p = pb.start();
+
+        //Process process = new ProcessBuilder("C:\\Program Files\\Weasis\\Weasis.exe").start();
 
     }
 }
