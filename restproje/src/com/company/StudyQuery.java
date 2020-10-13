@@ -36,19 +36,48 @@ public class StudyQuery {
                         .getJSONArray(_tmp.getSpecificCharacterSetT2()).getString(0));
             }
 
+            if (myArray.getJSONObject(i).getJSONObject(_tmp.getStudyDateT0()).has(_tmp.getStudyDateT2())) {
+                tmp.setStudyDateV2(obj.getJSONObject(_tmp.getStudyDateT0())
+                        .getJSONArray(_tmp.getStudyDateT2()).getString(0));
+            }
+
             if (myArray.getJSONObject(i).getJSONObject(_tmp.getAccessionNumberT0()).has(_tmp.getAccessionNumberT2())) {
                 tmp.setAccessionNumberV2(obj.getJSONObject(_tmp.getAccessionNumberT0())
                         .getJSONArray(_tmp.getAccessionNumberT2()).getString(0));
             }
-            //iki asamali
-            //myArray.getJSONObject(i).getJSONObject(_tmp.getReferringPhysiciansNameT0()).getJSONArray(_tmp.getReferringPhysiciansNameT2()).getJSONObject(0).has(_tmp.getReferringPhysiciansNameT3())
-            if (myArray.getJSONObject(i).has(_tmp.getReferringPhysiciansNameT0()) && myArray.getJSONObject(i).getJSONObject(_tmp.getReferringPhysiciansNameT0()).getJSONArray(_tmp.getReferringPhysiciansNameT2()).getJSONObject(0).has(_tmp.getReferringPhysiciansNameT3())) {
+
+            if (myArray.getJSONObject(i).has(_tmp.getReferringPhysiciansNameT0()) && myArray.getJSONObject(i).getJSONObject(_tmp.getReferringPhysiciansNameT0()).has(_tmp.getReferringPhysiciansNameT2()) && myArray.getJSONObject(i).getJSONObject(_tmp.getReferringPhysiciansNameT0()).getJSONArray(_tmp.getReferringPhysiciansNameT2()).getJSONObject(0).has(_tmp.getReferringPhysiciansNameT3())) {
                 tmp.setReferringPhysiciansNameV2(obj.getJSONObject(_tmp.getReferringPhysiciansNameT0())
                         .getJSONArray(_tmp.getReferringPhysiciansNameT2()).getJSONObject(0)
                         .getString(_tmp.getReferringPhysiciansNameT3()));
             }
 
 
+            //iki asamali
+            //myArray.getJSONObject(i).getJSONObject(_tmp.getReferringPhysiciansNameT0()).getJSONArray(_tmp.getReferringPhysiciansNameT2()).getJSONObject(0).has(_tmp.getReferringPhysiciansNameT3())
+
+            if (myArray.getJSONObject(i).getJSONObject(_tmp.getRetrieveAETitleT0()).has(_tmp.getRetrieveAETitleT2())) {
+                tmp.setRetrieveAETitleV2(obj.getJSONObject(_tmp.getRetrieveAETitleT0())
+                        .getJSONArray(_tmp.getRetrieveAETitleT2()).getString(0));
+            }
+
+            if (myArray.getJSONObject(i).getJSONObject(_tmp.getInstanceAvailabilityT0()).has(_tmp.getInstanceAvailabilityT2())) {
+                tmp.setInstanceAvailabilityV2(obj.getJSONObject(_tmp.getInstanceAvailabilityT0())
+                        .getJSONArray(_tmp.getInstanceAvailabilityT2()).getString(0));
+            }
+
+            if (myArray.getJSONObject(i).getJSONObject(_tmp.getModalitiesInStudyT0()).has(_tmp.getModalitiesInStudyT2())) {
+                tmp.setModalitiesInStudyV2(obj.getJSONObject(_tmp.getModalitiesInStudyT0())
+                        .getJSONArray(_tmp.getModalitiesInStudyT2()).getString(0));
+            }
+/*
+            if (myArray.getJSONObject(i).has(_tmp.getReferringPhysiciansNameT0()) && myArray.getJSONObject(i).getJSONObject(_tmp.getReferringPhysiciansNameT0()).getJSONArray(_tmp.getReferringPhysiciansNameT2()).getJSONObject(0).has(_tmp.getReferringPhysiciansNameT3())) {
+                tmp.setReferringPhysiciansNameV2(obj.getJSONObject(_tmp.getReferringPhysiciansNameT0())
+                        .getJSONArray(_tmp.getReferringPhysiciansNameT2()).getJSONObject(0)
+                        .getString(_tmp.getReferringPhysiciansNameT3()));
+            }
+
+ */
 
             if (myArray.getJSONObject(i).getJSONObject(_tmp.getRetrieveURLT0()).has(_tmp.getRetrieveURLT2())) {
                 tmp.setRetrieveURLV2(obj.getJSONObject(_tmp.getRetrieveURLT0())
@@ -80,6 +109,24 @@ public class StudyQuery {
                 tmp.setStudyInstanceUIDV2(obj.getJSONObject(_tmp.getStudyInstanceUIDT0())
                         .getJSONArray(_tmp.getStudyInstanceUIDT2()).getString(0));
             }
+
+            if (myArray.getJSONObject(i).getJSONObject(_tmp.getStudyIDT0()).has(_tmp.getStudyIDT2())) {
+                tmp.setStudyIDV2(obj.getJSONObject(_tmp.getStudyIDT0())
+                        .getJSONArray(_tmp.getStudyIDT2()).getString(0));
+            }
+
+            if (myArray.getJSONObject(i).getJSONObject(_tmp.getNumberofStudyRelatedSeriesT0()).has(_tmp.getNumberofStudyRelatedSeriesT2())) {
+                tmp.setNumberofStudyRelatedSeriesV2(obj.getJSONObject(_tmp.getNumberofStudyRelatedSeriesT0())
+                        .getJSONArray(_tmp.getNumberofStudyRelatedSeriesT2()).toString());
+            }
+
+
+            if (myArray.getJSONObject(i).getJSONObject(_tmp.getNumberofStudyRelatedInstancesT0()).has(_tmp.getNumberofStudyRelatedInstancesT2())) {
+                tmp.setNumberofStudyRelatedInstancesV2(obj.getJSONObject(_tmp.getNumberofStudyRelatedInstancesT0())
+                        .getJSONArray(_tmp.getNumberofStudyRelatedInstancesT2()).toString());
+            }
+
+
 
             list.add(tmp);
 

@@ -92,7 +92,11 @@ public class Main {
         for (int i = 0 ; i<dataList.size();i++) {
             System.out.println("*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/");
             System.out.println(dataList.get(i).SpecificCharacterSetV2);
+            System.out.println(dataList.get(i).StudyDateV2);
             System.out.println(dataList.get(i).AccessionNumberV2);
+            System.out.println(dataList.get(i).RetrieveAETitleV2);
+            System.out.println(dataList.get(i).InstanceAvailabilityV2);
+            System.out.println(dataList.get(i).ModalitiesInStudyV2);
             System.out.println(dataList.get(i).ReferringPhysiciansNameV2);
             System.out.println(dataList.get(i).RetrieveURLV2);
             System.out.println(dataList.get(i).PatientsNameV2);
@@ -100,6 +104,9 @@ public class Main {
             System.out.println(dataList.get(i).PatientsBirthDateV2);
             System.out.println(dataList.get(i).PatientsSexV2);
             System.out.println(dataList.get(i).StudyInstanceUIDV2);
+            System.out.println(dataList.get(i).StudyIDV2);
+            System.out.println(dataList.get(i).NumberofStudyRelatedSeriesV2);
+            System.out.println(dataList.get(i).NumberofStudyRelatedInstancesV2);
             System.out.println("*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/");
         }
 
