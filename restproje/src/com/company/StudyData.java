@@ -10,7 +10,7 @@ public class StudyData {
     String SpecificCharacterSetT1= "vr";
     String SpecificCharacterSetT2= "Value";
     String SpecificCharacterSetV1;
-    String SpecificCharacterSetV2;
+    String SpecificCharacterSetV2 = "";
 
     //00080020
     JSONObject 	StudyDateO = new JSONObject();
@@ -18,7 +18,7 @@ public class StudyData {
     String StudyDateT1= "vr";
     String StudyDateT2= "Value";
     String StudyDateV1;
-    String StudyDateV2;
+    String StudyDateV2 = "";
 
     //00080050
     JSONObject AccessionNumberO = new JSONObject();
@@ -26,7 +26,7 @@ public class StudyData {
     String AccessionNumberT1= "vr";
     String AccessionNumberT2= "Value";
     String AccessionNumberV1;
-    String AccessionNumberV2;
+    String AccessionNumberV2 = "";
 
     //00080054
     JSONObject 	RetrieveAETitleO = new JSONObject();
@@ -35,7 +35,7 @@ public class StudyData {
     String RetrieveAETitleT2= "Value";
     String RetrieveAETitleT3= "Alphabetic";
     String RetrieveAETitleV1;
-    String RetrieveAETitleV2;
+    String RetrieveAETitleV2 = "";
 
     //00080056
     JSONObject 	InstanceAvailabilityO = new JSONObject();
@@ -43,7 +43,7 @@ public class StudyData {
     String InstanceAvailabilityT1= "vr";
     String InstanceAvailabilityT2= "Value";
     String InstanceAvailabilityV1;
-    String InstanceAvailabilityV2;
+    String InstanceAvailabilityV2 = "";
 
     //00080061
     JSONObject 	ModalitiesInStudyO = new JSONObject();
@@ -52,7 +52,7 @@ public class StudyData {
     String ModalitiesInStudyT2= "Value";
     String ModalitiesInStudyT3= "Alphabetic";
     String ModalitiesInStudyV1;
-    String ModalitiesInStudyV2;
+    String ModalitiesInStudyV2 = "";
 
     //00080090
     JSONObject ReferringPhysiciansNameO = new JSONObject();
@@ -61,7 +61,7 @@ public class StudyData {
     String ReferringPhysiciansNameT2= "Value";
     String ReferringPhysiciansNameT3= "Alphabetic";
     String ReferringPhysiciansNameV1;
-    String ReferringPhysiciansNameV2;
+    String ReferringPhysiciansNameV2 = "";
 
     //00081190
     JSONObject RetrieveURLO = new JSONObject();
@@ -69,7 +69,7 @@ public class StudyData {
     String RetrieveURLT1= "vr";
     String RetrieveURLT2= "Value";
     String RetrieveURLV1;
-    String RetrieveURLV2;
+    String RetrieveURLV2 = "";
 
     //00100010
     JSONObject PatientsNameO = new JSONObject();
@@ -78,7 +78,7 @@ public class StudyData {
     String PatientsNameT2= "Value";
     String PatientsNameT3= "Alphabetic";
     String PatientsNameV1;
-    String PatientsNameV2;
+    String PatientsNameV2 = "";
 
     //00100020
     JSONObject PatientsIDO = new JSONObject();
@@ -86,7 +86,7 @@ public class StudyData {
     String PatientsIDT1= "vr";
     String PatientsIDT2= "Value";
     String PatientsIDV1;
-    String PatientsIDV2;
+    String PatientsIDV2 = "";
 
     //00100030
     JSONObject PatientsBirthDateO = new JSONObject();
@@ -94,7 +94,7 @@ public class StudyData {
     String PatientsBirthDateT1= "vr";
     String PatientsBirthDateT2= "Value";
     String PatientsBirthDateV1;
-    String PatientsBirthDateV2;
+    String PatientsBirthDateV2 = "";
 
     //00100040
     JSONObject PatientsSexO = new JSONObject();
@@ -102,7 +102,7 @@ public class StudyData {
     String PatientsSexT1= "vr";
     String PatientsSexT2= "Value";
     String PatientsSexV1;
-    String PatientsSexV2;
+    String PatientsSexV2 = "";
 
     //0020000D
     JSONObject 	StudyInstanceUIDO = new JSONObject();
@@ -110,7 +110,7 @@ public class StudyData {
     String StudyInstanceUIDT1= "vr";
     String StudyInstanceUIDT2= "Value";
     String StudyInstanceUIDV1;
-    String StudyInstanceUIDV2;
+    String StudyInstanceUIDV2 = "";
 
     //00200010
     JSONObject 	StudyIDO = new JSONObject();
@@ -118,7 +118,7 @@ public class StudyData {
     String StudyIDT1= "vr";
     String StudyIDT2= "Value";
     String StudyIDV1;
-    String StudyIDV2;
+    String StudyIDV2 = "";
 
     //00201206
     JSONObject 	NumberofStudyRelatedSeriesO = new JSONObject();
@@ -126,7 +126,7 @@ public class StudyData {
     String NumberofStudyRelatedSeriesT1= "vr";
     String NumberofStudyRelatedSeriesT2= "Value";
     String NumberofStudyRelatedSeriesV1;
-    String NumberofStudyRelatedSeriesV2;
+    String NumberofStudyRelatedSeriesV2 = "";
 
 
     //00201208
@@ -135,7 +135,7 @@ public class StudyData {
     String NumberofStudyRelatedInstancesT1= "vr";
     String NumberofStudyRelatedInstancesT2= "Value";
     String NumberofStudyRelatedInstancesV1;
-    String NumberofStudyRelatedInstancesV2;
+    String NumberofStudyRelatedInstancesV2 = "";
 
     public JSONObject getSpecificCharacterSetO() {
         return SpecificCharacterSetO;

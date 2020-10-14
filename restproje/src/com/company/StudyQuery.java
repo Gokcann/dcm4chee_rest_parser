@@ -31,7 +31,7 @@ public class StudyQuery {
             JSONObject obj = myArray.getJSONObject(i);
             StudyData tmp = new StudyData();
 
-            if (myArray.getJSONObject(i).getJSONObject(_tmp.getSpecificCharacterSetT0()).has(_tmp.getSpecificCharacterSetT2())) {
+            if (myArray.getJSONObject(i).has(_tmp.getSpecificCharacterSetT0()) && myArray.getJSONObject(i).getJSONObject(_tmp.getSpecificCharacterSetT0()).has(_tmp.getSpecificCharacterSetT2())) {
                 tmp.setSpecificCharacterSetV2(obj.getJSONObject(_tmp.getSpecificCharacterSetT0())
                         .getJSONArray(_tmp.getSpecificCharacterSetT2()).getString(0));
             }
