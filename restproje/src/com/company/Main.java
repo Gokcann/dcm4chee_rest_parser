@@ -115,7 +115,7 @@ public class Main {
 
         //Process process = new ProcessBuilder("C:\\Program Files\\Weasis\\Weasis.exe").command("$dicom:get -l \"D:/a/\"").start();
         //auto open weasis for given directory
-        Process process = new ProcessBuilder("C:\\Program Files\\Weasis\\Weasis.exe", "$dicom:get -l \"D:/a/\"").start();
+        Process process = new ProcessBuilder("C:\\Program Files\\Weasis\\Weasis.exe", "$dicom:get -l \"D:/a/a\"").start();
 
     }
 }
