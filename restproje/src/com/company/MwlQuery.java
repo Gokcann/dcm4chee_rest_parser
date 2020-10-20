@@ -141,6 +141,7 @@ public class MwlQuery {
             data[i].RequestedProcedurePriorityV2 = myArray.getJSONObject(i).getJSONObject(mwlData.RequestedProcedurePriorityT0)
                     .getJSONArray(mwlData.RequestedProcedurePriorityT2).getString(index2);
             System.out.println(data[i].RequestedProcedurePriorityV2);
+            System.out.println(data[i].RetrieveURLV2);
 
         }
         return null;
